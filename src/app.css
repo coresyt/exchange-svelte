@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
 	*,
 	html,
@@ -14,25 +13,25 @@
 	body {
 		padding: 0.1px;
 	}
-	
+
 	body > * {
 		display: inline;
 	}
-	
+
 	#app {
 		height: 100vh;
 		width: 100vw;
-	
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
-	input[type=number]::-webkit-inner-spin-button:hover,
-	input[type=number]::-webkit-outer-spin-button:hover {
+	input[type='number']::-webkit-inner-spin-button:hover,
+	input[type='number']::-webkit-outer-spin-button:hover {
 		display: none;
 	}
-	input[type=number] {
+	input[type='number'] {
 		appearance: textfield;
 	}
 }
