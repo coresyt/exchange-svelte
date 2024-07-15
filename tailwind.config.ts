@@ -2,10 +2,14 @@ import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
 
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/App.svelte', './src/components/*.svelte', './index.html'],
 
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				svelteColor: 'rgb(249, 103, 67)'
+			}
+		}
 	},
 
 	plugins: [typography]
